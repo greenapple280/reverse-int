@@ -1,0 +1,21 @@
+    //Convert the number to a string and split it into an array of characters.
+    let nToStr = n.toString();
+    let nToArr = nToStr.split("");
+
+    //reverce arr
+    let reversedArr = nToArr.reverse();
+
+    //Convert the array to a string
+    nToStr = String(reversedArr);
+
+    //Remove "," from the string
+    nToStr = nToStr.replaceAll(",", "");
+
+    //Convert the string to a number
+    nToNum = Number(nToStr);
+
+    //console.log
+    //console.log(nToNum);
+    //console.log(typeof nToNum);
+
+    return nToNum;
